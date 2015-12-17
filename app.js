@@ -17,8 +17,8 @@ app.use(express.static(path.join(__dirname, 'bower_components')));
 
 //insert title and url
 var siteData = {
-	title: "BBG Top News",
-	url: "http://www.bloomberg.com/",
+	title: "Top News",
+	url: "",
 	lastupdate: today(),
 };
 
