@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>headline</title>
+	<link rel="stylesheet" href = "bootstrap/dist/css/bootstrap.css" >
+</head>
+<body>
+	<div class="container">
+	<h1>News Headlines</h1>
+	<h3><%= siteName %></h3>
+	<p><%= lastupdate %></p>
+
+		<% for (var i=0; i < nameArr.length; i++) { %>
+			<h4><%= nameArr[i] %><small>   <a href=<%= urlArr[i] %>>LINK</a></small></h4>
+		<% } %>
+	
+	<hr />
+
+	<script src="jquery/dist/jquery.js"></script>
+	<script src="bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
