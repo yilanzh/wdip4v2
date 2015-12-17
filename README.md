@@ -24,4 +24,5 @@
 * Use JSON to store and retrieve data
 * Use database to store and update view
 * Populate visual content
+* Add test
 
