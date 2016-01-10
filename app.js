@@ -8,6 +8,9 @@ var fs = require('fs');
 var app = express();
 var today = require('./other.js');
 
+// process.env.PORT lets the port be set by Heroku
+var port = process.env.PORT || 8080;
+
 //setup view engine
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
@@ -52,6 +55,6 @@ app.get('/scrape', function(req, res){
 	});
 });
 
-app.listen(3000, function(){
-	console.log("ready on port 3000");
+app.listen(port, function(){
+	console.log("ready on port ", port);
 });
