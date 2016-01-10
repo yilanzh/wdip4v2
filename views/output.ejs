@@ -3,22 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>headline</title>
-	<link rel="stylesheet" href = "bootstrap/dist/css/bootstrap.css" >
+	<link rel="stylesheet" href = "style.css" >
 </head>
 <body>
-	<div class="container">
+	<section>
 	<h1>News Headlines</h1>
-	<h3><a href="/scrape"><%= siteName %></a></h3>
-	<p><%= lastupdate %></p>
+	<h2><a href="/scrape"><%= siteName %></a></h2>
+	<p class="sub"><%= lastupdate %></p>
 
 		<% for (var i=0; i < nameArr.length; i++) { %>
-			<h4><a href=<%= urlArr[i] %> target="_new"><%= nameArr[i] %></a></h4>
+			<p><a href=<%= urlArr[i] %> target="_new"><%= nameArr[i] %></a></p>
 		<% } %>
 	
 	<hr />
-	<p class="footer">Source: www.bloomberg.com </p>
-	</div>
-	<script src="jquery/dist/jquery.js"></script>
-	<script src="bootstrap/dist/js/bootstrap.js"></script>
+	<p class="sub">Source: www.bloomberg.com </p>
+	</section>
+
+
 </body>
 </html>

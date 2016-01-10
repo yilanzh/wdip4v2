@@ -9,7 +9,8 @@ var today = function(){
 	var yyyy = d.getFullYear();
 	var min = zerofill(d.getMinutes());
 	var hr = zerofill(d.getHours());
-	return dd+'/'+mm+'/'+yyyy + ' ' + hr + ':' + min;
+	var sec = zerofill(d.getSeconds());
+	return dd+'/'+mm+'/'+yyyy + ' ' + hr + ':' + min + ':' + sec;
 }
 
 module.exports = today;

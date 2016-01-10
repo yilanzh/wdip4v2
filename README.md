@@ -9,7 +9,7 @@
 * nodemon: server auto refresh
 
 ## Issues
-* Unable to pass data from request to public variable. Therefore two views were used to show link and result.
+* Unable to pass data from request to out of scope variable. Therefore two views were used to show link and result.
 * How to nest the code so that second request can use result from the first request.
 * More work required to obtain useful data from saved JSON file
 
@@ -18,6 +18,7 @@
 * hbs and express-handlebars
 * express generator
 * body-parser
+* bower and bootstrap
 
 ## Next
 * Work with more than one remote location

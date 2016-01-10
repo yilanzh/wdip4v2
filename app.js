@@ -15,8 +15,8 @@ var port = process.env.PORT || 8080;
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-//setup middleware
-app.use(express.static(path.join(__dirname, 'bower_components')));
+//set static entry
+app.use(express.static(path.join(__dirname, 'views')));
 
 //insert title and url
 var siteData = {
