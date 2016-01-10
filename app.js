@@ -17,8 +17,8 @@ app.use(express.static(path.join(__dirname, 'bower_components')));
 
 //insert title and url
 var siteData = {
-	title: "Top News",
-	url: "",
+	title: "BBG Top News",
+	url: "http://www.bloomberg.com/",
 	lastupdate: today(),
 };
 
@@ -42,7 +42,7 @@ app.get('/scrape', function(req, res){
 				urlArr.push(siteData.url + $(this).children().first().attr('href'));
 			});		
 		}
-		fs.writeFile('raw.html', html);
+		
 		res.render('output', {
 				siteName: siteData.title,
 				lastupdate: today(),

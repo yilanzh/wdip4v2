@@ -8,15 +8,16 @@
 <body>
 	<div class="container">
 	<h1>News Headlines</h1>
-	<h3><%= siteName %></h3>
+	<h3><a href="/scrape"><%= siteName %></a></h3>
 	<p><%= lastupdate %></p>
 
 		<% for (var i=0; i < nameArr.length; i++) { %>
-			<h4><%= nameArr[i] %><small>   <a href=<%= urlArr[i] %>>LINK</a></small></h4>
+			<h4><a href=<%= urlArr[i] %> target="_new"><%= nameArr[i] %></a></h4>
 		<% } %>
 	
 	<hr />
-
+	<p class="footer">Source: www.bloomberg.com </p>
+	</div>
 	<script src="jquery/dist/jquery.js"></script>
 	<script src="bootstrap/dist/js/bootstrap.js"></script>
 </body>
